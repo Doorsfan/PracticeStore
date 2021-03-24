@@ -1,0 +1,24 @@
+{
+    "All": [
+        { "product_id": "1", "name": "Monolith Gaming", "price": "1500", "sale": "0" },
+        { "product_id": "2", "name": "iPhone 9 X-Small Digital", "price": "3500", "sale": "0" },
+        { "product_id": "3", "name": "HP 22 inch screen VK 2470", "price": "1500", "sale": "0" },
+        { "product_id": "4", "name": "Sony 44 inch Wide screen VH 550", "price": "4500", "sale": "0" },
+        { "product_id": "5", "name": "Corsair 6000 Vengeance Sail", "price": "3300", "sale": "0" }
+    ],
+    "Computers": [
+        { "product_id": "1", "name":"Monolith Gaming", "price": "1500", "sale": "0" }
+    ],
+    "Phones": [
+        { "product_id": "2", "name": "iPhone 9 X-Small Digital", "price": "3500", "sale": "0" }
+    ],
+    "Screens": [
+        { "product_id": "3", "name": "HP 22 inch screen VK 2470", "price": "1500", "sale": "0" }
+    ],
+    "TV": [
+        { "product_id": "4", "name": "Sony 44 inch Wide screen VH 550", "price": "4500", "sale": "0" }
+    ],
+    "Headphones": [
+        { "product_id": "5", "name": "Corsair 6000 Vengeance Sail", "price": "3300", "sale": "0" }
+    ]
+}

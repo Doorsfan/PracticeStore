@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Mikael's Shop
+    link(rel='stylesheet', href='/css/sent_email.css')
+    script(src='/frontend_scripts/sent_email_frontend.js')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body(id="body")
+    header(id='header')
+      a(href='/main') Back to Main Page
+      a(href='/login') Back to Login
+      p(id="mainTitle") Mikael's Shop
+    div(id="content")
+      p(id="thank_you_message") Thanks for registering an account on Mikaels Shop! We have sent an E-mail to the address of: #{email}
+      p(id="info_box_1") To use your registered account, you need to validate your Account in the E-mail sent to you.
+    footer
+      p(id="support_email") Contact support at: mikaels.shop@gmail.com

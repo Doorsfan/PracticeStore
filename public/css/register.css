@@ -1,0 +1,147 @@
+/* Importing Normalize - resetting the style differences
+   between browsers */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+p{
+  margin:0px;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+form{
+    display:inline-block;
+    margin-left: auto;
+    margin-right:auto;
+    position:absolute;
+    left: 43%;
+    width: 100%;
+    width: max-content;
+}
+
+#title{
+    text-align:center;
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#usernameYorN{
+    display:inline;
+    align-self:auto;
+    margin-left: 5px;
+    position: absolute;
+}
+
+#usernameYorNtext{
+    display:inline;
+    width:max-content;
+    align-self:auto;
+    background-color:palevioletred;
+    border-color:white;
+    border-style:solid;
+    color:black;
+    margin-left:auto;
+    margin-right: auto;
+}
+#confirmpasswordtextP{
+  text-align:center;
+  width:177px;
+}
+#passwordtextP{
+  text-align:center;
+  width:177px;
+}
+#usernameP{
+  margin-bottom: 40px;
+}
+#emailtextP{
+  text-align:center;
+  width:177px;
+}
+
+#mobiletextP{
+  text-align:center;
+}
+
+#usernameYorNtext{
+  display:inline;
+  position:absolute;
+  margin:0px;
+  top: 17%;
+  left:auto;
+}
+
+#emailYorN{
+    display:inline;
+    align-self:auto;
+    margin-left: 5px;
+    position: absolute;
+}
+#usertextP{
+  text-align:center;
+  width:177px;
+}
+
+#emailYorNtext{
+    display:inline;
+    width:max-content;
+    align-self:auto;
+    background-color:palevioletred;
+    border-color:white;
+    border-style:solid;
+    color:black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#passwordYorN{
+    display:inline;
+    align-self:auto;
+    margin-left: 5px;
+    position: absolute;
+}
+
+#passwordYorNtext{
+    display:inline;
+    width:max-content;
+    align-self:auto;
+    background-color:palevioletred;
+    border-color:white;
+    border-style:solid;
+    color:black;
+}
+
+#mobileYorN{
+  display:inline;
+  align-self:auto;
+  margin-left: 5px;
+  position: absolute;
+}
+
+#mobileYorNtext{
+  margin-left:0px;
+  display:inline;
+  width:max-content;
+  align-self:auto;
+  background-color:palevioletred;
+  border-color:white;
+  border-style:solid;
+  color:black;
+}
+
+#confirmpasswordYorN{
+    display:inline;
+    align-self:auto;
+    margin-left: 5px;
+    position: absolute;
+}
+
+#confirmpasswordYorNtext{
+    margin-left:0px;
+    display:inline;
+    width:max-content;
+    align-self:auto;
+    background-color:palevioletred;
+    border-color:white;
+    border-style:solid;
+    color:black;
+}

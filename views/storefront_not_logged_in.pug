@@ -1,0 +1,40 @@
+doctype html
+html.main_body
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/storefront_not_logged_in.css')
+    script(src='/frontend_scripts/storefront_front.js')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body(id='body')
+    main
+      block header
+        header.headPiece
+          p(id='titleP') Mikaels Shop
+          |
+          a(href='/login')
+            img(class="doorHolder" src='/images/door.png')
+            |
+            a(class="login_link" href='/login') Log in
+          form(method="post", action="/searchItem")   
+            p(id='dropDownSubmitP')
+            | 
+            input.searchBar(type='search', placeholder='Product ID or Name')
+            input.searchButton(type='submit', value='Search')
+      block.content
+        p.productIdHeader ID
+        |
+        p.productNameHeader Product name
+        |
+        p.productQuantityHeader Quantity
+        |
+        p.priceHeader Price
+        |
+        p.inStockHeader In Stock
+      block(id='footer')
+        each item in items
+          div(class='item_holder')
+            p(class='product_id') #{item.product_id}
+            |
+            p(class='product_name') #{item.name}
+            |
+            p(class='product_price') #{item.price}

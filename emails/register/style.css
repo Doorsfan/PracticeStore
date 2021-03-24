@@ -1,0 +1,59 @@
+
+#background{
+    display: inline;
+}
+
+#header{
+  background-color: white;
+  user-select:none!important;
+  height:max-content;
+  margin-left:auto;
+  margin-right:auto;
+}
+#confirm{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: #069;
+    text-align:center;
+}
+#title{
+  text-align:center;
+  color:black;
+}
+#information{
+  display:inline;
+  width:max-content;
+  text-align:center;
+  color:black;
+}
+#username{
+  display:inline;
+}
+
+p{
+  color:black;
+}
+#confirm:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+#emailContainer{
+  display:none!important;
+}
+
+#usernameContainer{
+  display: none!important;
+}
+
+#passwordContainer{
+  display: none!important;
+}
+
+#body{
+  text-align:center;
+}

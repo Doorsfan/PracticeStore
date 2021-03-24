@@ -1,0 +1,10 @@
+{    
+"Users": [
+    {
+      "username":"mikaelAdmin",
+      "activated":"true",
+      "password":"dominopw",
+      "email":"mikael.rusin@gmail.com"
+    }
+  ]
+}

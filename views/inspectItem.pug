@@ -1,0 +1,65 @@
+doctype html
+html.main_body
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/inspectItem.css')
+    link(rel='stylesheet', href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    script(src='/frontend_scripts/inspect_item_frontend.js')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    header.headPiece
+      a(class='back_to_main' href='/') Back to Main Page
+        img(class="back_to_main_pic" src="/images/Back_Arrow.png")
+      p(id='titleP') Mikaels Shop
+      |
+      p(class='cart_text') Items in cart
+      | 
+      p(class='items_in_cart') #{itemsInCart}
+      |
+      a(class="checkoutLink" href='/checkout')
+        img(class="cartHolder" src='/images/cart.png')
+      a(class="account_link" href='/my_account') My Account
+        img(class="accountPic" src='/images/account_pic.png')
+      form(method="get", action="/checkout")
+        p(id="toCartButton")
+          |
+          input(class="checkoutButton" type='submit', value='To Checkout')
+    div(class="itemHolder")
+      p(class="product_info") Product Information:
+      canvas(id="myCanvas")
+      p(class="productID") Product ID: #{product_id}
+      p(class="itemName") Product name: #{name}
+      p(class="price") Price: #{price} kr
+      p(class="stock") In stock: #{stock} Left in stock
+      div(class="amountHolder") 
+        form(method="post", action="/inspectItem?name=" + name)
+          p(class="wantedAmountP") Wanted amount:
+          input(class="amountInput", type="number", min="1" ,value="1", name="amount")
+          input(class="addToCartButton", type='submit', value='Add to Cart')
+      div(class="reviewBox")
+        each review in reviews
+          if review.product==name
+            div(class="innerReviewBox") 
+              p(class="reviewUsername") #{review.username} - #{review.date}
+              each star in review.rating
+                span(class="fa fa-star checked")
+              each star in review.remaining
+                span(class="fa fa-star")
+              p(class="reviewText") #{review.text}
+        form(id='login_form', method="post" action="/inspectItem?name=" + name + "&review=true")
+          if loggedInUser!="Not logged in"
+            p(class="reviewUsername") You are logged in as: #{loggedInUser}
+          else
+            p(class="reviewUsername") You must be logged in to post a review
+          if loggedInUser!="Not logged in"
+            span(id="ratingsSpan") I rate this product: 
+            span(id="myReviewStar1" class="fa fa-star reviewstar")
+            span(id="myReviewStar2" class="fa fa-star reviewstar")
+            span(id="myReviewStar3" class="fa fa-star reviewstar")
+            span(id="myReviewStar4" class="fa fa-star reviewstar")
+            span(id="myReviewStar5" class="fa fa-star reviewstar")
+            textarea(class="reviewInputBox", name="message", rows="10", cols="30", placeholder="Write your review here..")
+          else
+            a(class="login_link" href="/login") Login
+          if loggedInUser!="Not logged in"
+            input(class="postReview", type='submit', value='Post Review')

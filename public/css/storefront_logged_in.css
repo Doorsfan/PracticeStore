@@ -1,0 +1,257 @@
+/* Importing Normalize - resetting the style differences
+   between browsers */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+#mugsDropDown{
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 40px;
+    border-style:groove;
+    border-color:orange;
+    background-color: white;
+    margin-left: 5%;
+    background: radial-gradient(circle, white 0%, orange 100%);
+}
+p{
+    margin:0px;
+}
+.price{
+    font-size: 50px;
+}
+
+.cart_text{
+    display: inline;
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    right: 90px;
+    font-size: 20px;
+    top: 113px;
+}
+
+.itemButton{
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-align:center;
+  margin-bottom:10px;
+}
+.items_in_cart{
+    display: inline;
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    right: 90px;
+    font-size: 30px;
+    top: 85px;
+}
+.cartHolder{
+    height: max-content;
+    display: inline;
+    width: max-content;
+    right: 10px;
+    position: absolute;
+    top: 80px;
+}
+.inStock{
+    font-size: 50px;
+}
+.checkoutButton{
+  position:absolute;
+  top: 40px;
+  right: 50px;
+}
+#titleP{
+    font-size: 50px;
+    height: max-content;
+    margin: 1px;
+    text-align: center;
+    display: inline;
+    position:absolute;
+    top: 50px;
+    margin-left: 40%;
+    width: max-content;
+}
+
+.dropdownForm{
+  position:absolute;
+  top: 100px;
+  width: 700px;
+}
+
+.itemToDisplay{
+    text-align: center;
+    width: max-content;
+    margin-left:45%;
+}
+
+.productIdHeader{
+    width: max-content;
+    margin: 0px;
+    margin-left: 5%;
+    height: max-content;
+    display:inline;
+    font-size:300%;
+}
+.productNameHeader{
+    width: max-content;
+    margin:0px;
+    margin-left: 8%;
+    height: max-content;
+    display:inline;
+    font-size:300%;
+}
+
+.product_name{
+    display: inline;
+    width: max-content;
+    margin-left: 10%;
+    height: max-content;
+    font-size:150%;
+    left: 16%;
+}
+
+#toCartButton{
+    width: max-content;
+    display: inline;
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    height: max-content;
+}
+.product_price{
+    display: inline;
+    width: max-content;
+    position:fixed;
+    left: 59%;
+    height: max-content;
+    font-size:150%;
+}
+
+div.item_holder{
+    display: block;
+    width:100vw;
+    height: max-content;
+}
+
+.stock{
+    display: inline;
+    width: max-content;
+    margin:0px;
+    height: max-content;
+    font-size:150%;
+    margin-left: 13%;
+}
+
+.productQuantityHeader{
+    width: max-content;
+    display:inline;
+    margin:0px;
+    margin-left: 10%;
+    height: max-content;
+    font-size: 50px;
+}
+
+.priceHeader{
+    width: max-content;
+    display:inline;
+    margin:0px;
+    margin-left: 10%;
+    height: max-content;
+    font-size: 50px;
+}
+
+.inStockHeader{
+    width: max-content;
+    display:inline;
+    margin:0px;
+    margin-left: 10%;
+    height: max-content;
+    font-size: 50px;
+}
+
+#dropDownSubmitP{
+    width:max-content;
+    display:inline;
+    margin:0px;
+    margin-left: 5%;
+    height: max-content;
+}
+
+.content{
+    height: max-content;
+    background-color: orange;
+    display: block;
+    background: radial-gradient(circle, white 0%, orange 100%);
+}
+
+.headPiece{
+    background-color: orange;
+    background: radial-gradient(circle, white 0%, orange 100%);
+    height: 180px;
+}
+
+.product_id{
+    width: max-content;
+    display:inline;
+    margin-left: 6%;
+    height: max-content;
+    font-size: 130%; 
+}
+
+.account_link{
+  position:absolute;
+  right:10px;
+  top: 60px;
+  text-decoration:none;
+  color:black;
+  font-size: 20px;
+}
+.accountPic{
+  position:absolute;
+  right:10px;
+  top: -50px;
+}
+
+figure {
+  position: relative;
+  width:300px;
+  margin:0px;
+  height:150px;
+  display:inline-block;
+  align-items:center;
+  align-self:center;
+  margin-top:20px;
+}
+
+figure img {
+  display: block;
+  align-items:center;
+  align-self:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+figcaption {
+  color: #FFF;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width:300px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.itemLink{
+  color:black;
+}
+
+.searchButton{
+  margin-left:10px;
+}

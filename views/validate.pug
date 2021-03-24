@@ -1,0 +1,16 @@
+doctype html
+html.main_body
+  head
+    title Mikael's Shop
+    link(rel='stylesheet', href='/css/validate.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body(id="body")
+    header(id='header')
+      a(href='/main') Back to Main Page
+      a(href='/login') Back to Login
+      p(class="title") Mikael's Shop
+    div(class="content")
+      p(class="validateMessage1") Thank you for registering to Mikaels Shop!
+      p(class="validateMessage2") You can now login with the Account of: #{username} bound to the email of #{email}
+    footer
+      p(class="support_email") Contact support at: mikaels.shop@gmail.com

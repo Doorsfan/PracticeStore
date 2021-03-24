@@ -1,0 +1,48 @@
+doctype html
+html.main_body
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/store_front.css')
+    script(src='/frontend_scripts/storefront_front.js')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body(id='body')
+    main
+      block header
+        header.headPiece
+          p(id='titleP') Mikaels Shop
+          |
+          p(id='cart_text') Items in cart
+          | 
+          p.itemsInCart #{itemsInCart}
+          |
+          a(href='/checkout')
+            img.cartHolder(src='cart.png')
+          form(method="post", action="/davaj")
+            select(name='dropDown', id='mugsDropDown')
+                each val in ['All categories', 'Computers', 'Phones', 'Screens', 'TV', 'Headphones']
+                  option(id='dropdownItem') #{val}
+                  
+            p(id='dropDownSubmitP')
+              | 
+              input.searchBar(type='search', placeholder='Product ID or Name')
+              input.searchButton(type='submit', value='Search')
+      block.content
+        p.productId ID
+        |
+        p.productName Product name
+        |
+        p.productQuantity Quantity
+        |
+        p.price Price
+        |
+        p.inStock In Stock
+      block.footer
+        each item in items
+          p.itemHolder
+            p.productIdNumber #{item.product_id}
+            |
+            p.itemName #{item.name}
+            |
+            p.itemPrice #{item.price} kr
+            |
+            p.stock #{stock} left

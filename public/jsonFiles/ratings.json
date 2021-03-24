@@ -1,0 +1,21 @@
+{
+  "reviews": [
+    {
+      "username": "Mikael", 
+      "rating": "***", 
+      "remaining": "**", 
+      "text": "I found this product very helpful", 
+      "date": "2021/05/03",
+      "product": "Monolith Gaming"
+    },
+    {
+      "username": "mikaelAdmin", "rating": "***", "remaining": "**", "text": "fuck you phone", "date": "2021-06-03",  "product": "iPhone 9 X-Small Digital"
+  },
+    {
+      "username": "mikaelAdmin", "rating": "***", "remaining": "**", "text": "Totally rad screen man", "date": "2021-06-03",  "product": "HP 22 inch screen VK 2470"
+  },
+    {
+      "username": "mikaelAdmin", "rating": "***", "remaining": "**", "text": "Who the fuck even watches TV, man????", "date": "2021-06-03",  "product": "Sony 44 inch Wide screen VH 550"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+doctype html
+html.main_body
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/storefront_logged_in.css')
+    script(src='/frontend_scripts/storefront_front_logged_in.js')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body(id='body')
+    main
+      block header
+        header.headPiece
+          p(id='titleP') Mikaels Shop
+          |
+          p(class='cart_text') Items in cart
+          | 
+          p(class='items_in_cart') #{itemsInCart}
+          |
+          a(class="checkoutLink" href='/checkout')
+            img(class="cartHolder" src='/images/cart.png')
+          a(class="account_link" href='/my_account') My Account
+            img(class="accountPic" src='/images/account_pic.png')
+          form(method="get", action="/checkout")
+            p(id="toCartButton")
+              |
+              input(class="checkoutButton" type='submit', value='To Checkout')
+          form(class="dropdownForm" method="post", action="/searchItem")
+            select(name='dropDown', id='mugsDropDown')
+                each val in ['All categories', 'Computers', 'Phones', 'Screens', 'TV', 'Headphones']
+                  option(id='dropdownItem') #{val}
+            p(id='dropDownSubmitP')
+              | 
+              input.searchBar(type='search', placeholder='Product ID or Name')
+              input.searchButton(type='submit', value='Search')
+      block(class='footer')
+        each item in items
+          figure
+            a(class="itemLink" href='/inspectItem?name=' + item.name)
+              img(class="itemImage", type="submit", src='/images/Monolith Gaming.png')
+            figcaption(class="figCaption")
+              a(class="itemLink" href='/inspectItem?name=' + item.name) #{item.name} #{item.price} kr           

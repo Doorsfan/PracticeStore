@@ -1,0 +1,30 @@
+doctype html
+html.main_body
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/login.css')
+    script(src='/frontend_scripts/login_screen_frontend.js')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body(id='body')
+    main
+      block header
+        header(id='header')
+          h1(id='title') #{title}
+          form(id='login_form', method="post" action="/login")
+            p(id='usernameP')
+              | Username: 
+              input(id='usernameInput', type='username', name='Username', value='', placeholder='Enter your username here..', required)
+            p(id='passwordP')
+              | Password:
+              input(id='passwordInput', type='password', name='Password', value='', placeholder='Enter your password here..', required)
+            p(id='submitP')
+              |
+              input(id='login_button', type='submit', name='Login', value='Login')
+              |
+              p(id='invalidUsername') #{invalidUsername}
+              p(id='invalidPassword') #{invalidPassword}
+          p(id='registerP')
+            |
+            a(href='/register') Register New Account
+      block.content content
+      block.footer footer

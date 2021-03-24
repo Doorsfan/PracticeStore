@@ -1,0 +1,26 @@
+doctype html
+html.main_body
+  head
+    title #{title}
+    link(rel='stylesheet', href='style.css', data-inline)
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body(id='body')
+    main
+      block header
+        header(id='header')
+          img(id='background', src='cid:back', disabled=true)
+          h1(id='title') Thank you for registering!
+            |
+          p(id='information') Before you start using our Shop, there is one more step, you just need to click the link below to validate your account with the username of:
+            |
+          p(id='username') #{username}
+            |
+          p(id='registerP')
+            |
+            form(id='register_form', method="post", action="localhost/validate")
+              input(id="emailContainer", name="email", type="text", value="mikael.rusin@gmail.com")
+              input(id="usernameContainer", name="username", type="text", value=username)
+              input(id="passwordContainer", name="password", type="text", value=password)
+              input(id='confirm', type='submit', name='confirm', value='Click to validate your account')
+      block.content
+      block.footer

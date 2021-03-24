@@ -1,0 +1,167 @@
+/* Importing Normalize - resetting the style differences
+   between browsers */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+#mugsDropDown{
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 40px;
+    border-style:groove;
+    border-color:orange;
+    background-color: white;
+    margin-left: 5%;
+    background: radial-gradient(circle, white 0%, orange 100%);
+}
+p{
+    margin:0px;
+}
+.price{
+    font-size: 50px;
+}
+
+
+.doorHolder{
+    height: max-content;
+    display: inline;
+    width: max-content;
+    right: 10px;
+    position: absolute;
+    top: 15px;
+}
+.inStock{
+    font-size: 50px;
+}
+
+#titleP{
+    font-size: 50px;
+    height: max-content;
+    margin: 1px;
+    text-align: center;
+    display: inline;
+    margin-left: 40%;
+    width: max-content;
+}
+
+.itemToDisplay{
+    text-align: center;
+    width: max-content;
+    margin-left:45%;
+}
+
+.productIdHeader{
+    width: max-content;
+    margin: 0px;
+    margin-left: 5%;
+    height: max-content;
+    display:inline;
+    font-size:300%;
+}
+.productNameHeader{
+    width: max-content;
+    margin:0px;
+    margin-left: 8%;
+    height: max-content;
+    display:inline;
+    font-size:300%;
+}
+
+.product_name{
+    display: inline;
+    width: max-content;
+    margin-left: 10%;
+    height: max-content;
+    font-size:150%;
+    left: 16%;
+}
+
+
+.product_price{
+    display: inline;
+    width: max-content;
+    position:fixed;
+    left: 59%;
+    height: max-content;
+    font-size:150%;
+}
+
+div.item_holder{
+    display: block;
+    width:100vw;
+    height: max-content;
+}
+
+.stock{
+    display: inline;
+    width: max-content;
+    margin:0px;
+    height: max-content;
+    font-size:150%;
+    margin-left: 13%;
+}
+
+.productQuantityHeader{
+    width: max-content;
+    display:inline;
+    margin:0px;
+    margin-left: 10%;
+    height: max-content;
+    font-size: 50px;
+}
+
+.priceHeader{
+    width: max-content;
+    display:inline;
+    margin:0px;
+    margin-left: 10%;
+    height: max-content;
+    font-size: 50px;
+}
+
+.inStockHeader{
+    width: max-content;
+    display:inline;
+    margin:0px;
+    margin-left: 10%;
+    height: max-content;
+    font-size: 50px;
+}
+
+#dropDownSubmitP{
+    width:max-content;
+    display:inline;
+    margin:0px;
+    margin-left: 5%;
+    height: max-content;
+}
+
+.content{
+    height: max-content;
+    background-color: orange;
+    display: block;
+    background: radial-gradient(circle, white 0%, orange 100%);
+}
+
+.headPiece{
+    background-color: orange;
+    background: radial-gradient(circle, white 0%, orange 100%);
+}
+
+.product_id{
+    width: max-content;
+    display:inline;
+    margin-left: 6%;
+    height: max-content;
+    font-size: 130%; 
+}
+
+a{
+  text-decoration:none;
+}
+
+.login_link{
+  position:absolute;
+  right:20px;
+  top: 90px;
+  font-size: 30px;
+}
